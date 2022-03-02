@@ -1,0 +1,141 @@
+body {
+  height: 100px;
+  display: grid;
+  place-items: center;
+  font: 300 1.8rem/1.5 "Noto Sans KR", sans-serif;
+  background-color: #ecafec;
+}
+
+.App {
+  height: 80px;
+  width: 800px;
+  padding: 40px 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: -1px -1px 15px 9px rgb(0 0 0 / 3%),
+    -1px -1px 15px 9px rgb(0 0 0 / 3%), -1px -1px 15px 9px rgb(0 0 0 / 3%),
+    -1px -1px 15px 9px rgb(0 0 0 / 3%);
+}
+.App h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font: 700 5rem/1.3 "fredericka the great", cursive;
+  font-style: italic;
+}
+form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.App.write {
+  height: 30px;
+  margin-bottom: 30px;
+}
+.App .Input {
+  height: 30px;
+  font: 300 1.8rem/1.5 "Noto Sans KR", sans-serif;
+  color: #a9abae;
+  width: 80%;
+  border: inherit;
+  border-bottom: 2px solid #ee7ca4;
+  background-color: transparent;
+  color: #000;
+  padding-left: 5px;
+}
+.App .Btn {
+  width: 20%;
+  height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #ec85a9;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 50px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 3px rgb(0 0 0 / 10%);
+}
+.list .title {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+}
+.list.title h3 {
+  width: 90%;
+  font: 300 1.8rem/1.5 "Noto Sans KR", sans-serif;
+  color: #000;
+  position: relative;
+  text-transform: uppercase;
+  display: block;
+}
+.list .title h3::before,
+.list .title h3::after {
+  content: "";
+  border-bottom: solid 10px #ecafec;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease;
+}
+.list.check {
+  margin-left: 20px;
+  width: 40px;
+}
+.list .btn {
+  margin-left: 20px;
+  transition: opacity ease 0.5;
+}
+.list p {
+  margin-right: 10px;
+  color: #f9d3e0;
+  font: 300 2rem/1.3 "Teko", sans-serif;
+}
+
+.list button {
+  justify-content: right;
+  width: 20px;
+  height: 20px;
+}
+
+.list .button {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  float: right;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #181717;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+textarea {
+  padding-left: 5px;
+  width: 100%;
+  resize: none;
+  height: 30px;
+  font: 300 1.8rem/1.5 "Noto Sans KR", sans-serif;
+  border: inherit;
+  border-bottom: 2px solid #141314;
+  outline: none;
+}
+
+.btn {
+  display: flex;
+}
+
+.btn button {
+  color: #f9d3e0;
+  font: 500 3rem/25px "Teko", sans-serif;
+}

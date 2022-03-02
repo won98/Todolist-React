@@ -13,11 +13,11 @@ export const Main = () => {
     return await axios
       .post("/list", {
         //REST API에 작성했던 '/' url 작성
-        content: todo, // content라는 이름에 todo(input의 value)를 담아서 보냄
+        text: todo, // content라는 이름에 todo(input의 value)를 담아서 보냄
       })
       .then((res) => {
         // 전송성공하면
-        //console.log(res);
+
         alert("전송성공");
         window.location.reload(); // 화면을 새로고침
       })
